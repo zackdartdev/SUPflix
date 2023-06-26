@@ -1,0 +1,124 @@
+:root{
+    --vermelho: #e40017;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+
+body {
+    background-color: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    margin-left: 2%;
+}
+
+header .logo {
+    margin-right: 3%;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 27px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color: #FFF;
+}
+
+/* PRINCIPLE MOVIE */
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0.10), rgba(0,0,0,.10)50%), url(../img/capa-house4.jpg);
+    height: 400px;
+    background-size: cover;
+    margin-bottom: 0.3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container{
+    width: 85%;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.filme-principal .titulo{
+    margin-top: 7%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+
+}
+
+/* BUTTON */
+.botao{
+    background-color: rgba(46, 49, 49,.80);
+    border: 1px solid rgba(46,49,49,1);
+    border-radius: 25px;
+    color: white;
+
+    padding: 10px 25px;
+    margin-right: 15px;
+    margin-bottom: 0.5%;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: rgba(191, 191, 191, .50);
+    color: white;
+    border: 1px solid rgba(46,49,49,1);
+    border-radius: 25px;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+/* MOVIE BOX */
+.movie-box {
+    height: 50%;
+    width: 50%;
+}
+
+/* CAROUSEL MOVIES */
+.carousel-movies {
+    margin-top: 1%;
+}
+
+/* CATEGORIES */
+.categorias{
+    margin-left: 50%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
